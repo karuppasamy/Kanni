@@ -982,12 +982,12 @@
 			return;
 		}
 		
-		var style = node.getAttribute('style');
-		if (style) {
-			style += ';' + name + ':' + value;
-		} else {
+		// var style = node.getAttribute('style');
+		// if (style) {
+		//	style += ';' + name + ':' + value;
+		// } else {
 			style = name + ':' + value;
-		}
+		// }
 		
 		if (node.setAttribute) {
 			node.setAttribute('style', style);
